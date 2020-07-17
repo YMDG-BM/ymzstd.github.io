@@ -24,21 +24,15 @@
 	top:100px;
 	outline: none;
 	border: none;
-
 	transition:border-radius 0.4s, background 0.4s;
 }
 .button:hover {
 	border-radius: 15px;
-	background:rgb(222, 222, 222);
-	
-	
-	
-	
+	background:rgb(222, 222, 222);	
 }
 .button:active {
 	border-radius: 29px;
 	background: rgb(190, 190, 190);
-	
 }
 
 .buttondisabled{
@@ -51,8 +45,6 @@
 	top:100px;
 	outline: none;
 	border: none;
-
-
 }
 
 h1 {
@@ -68,21 +60,40 @@ p {
 	font-size:25px;
         color:#AAAADD
 }
+a{
+	display:block;
+	height:40px;
+	width:200px;
+	line-height:40px; 
+	text-decoration:none;
+}
+a:link{
+	color:#111111;
+}
+a:visited{
+	color:#111111;
+}
+a:hover{
+	color:#111111;
+}
+a:active{
+	color:#111111;
+}
 </style>
 </head>
 <body>
 <div id="grad1">
-    <dropdown>
-      <input id="toggle1" type="checkbox" checked>
-      <label for="toggle1" class="animate">MENU<i class="fa fa-bars float-right"></i></label>
-      <ul class="animate">
-        <li class="animate">Code<i class="fa fa-code float-right"></i></li>
-        <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
-        <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
-      </ul>
-    </dropdown>
   <h1 style="text-align:center;">NAC博客</h1>
 </div>
+      <dropdown>
+      <input id="toggle1" type="checkbox">
+      <label for="toggle1" class="animate">菜单<i class="fa fa-bars float-right"></i></label>
+      <ul class="animate">
+        <li class="animate">bilibili帐号<i class="fa fa-code float-right"></i></li>
+        <li class="animate"><a href="https://qm.qq.com/cgi-bin/qm/qr?k=ECQtujv6S8rFiZw9CGjL8vwuqOMe58aw&authKey=%2BfjiVc1hQIWcKgotK%2FSfsAdF%2Bsn5fLTebVerT0hDrI8gHDRpNikH55srfbxpkx5%2B">qq群</a><i class="fa fa-arrows-alt float-right"></i></li>
+        <li class="animate"><a href="ymdg-bm.github.io/ymz">鸡黍博客</a><i class="fa fa-cog float-right"></i></li>
+      </ul>
+    </dropdown>
 <p>正在开发中</p>
 <button class="button"><font color="#00000">可以按</font></button>
 <button class="buttondisabled">无效</button>
