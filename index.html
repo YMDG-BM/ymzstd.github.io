@@ -2,18 +2,20 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 <title>NAC博客‖开发中</title>
 <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
 <style type/css>
-#grad1 {
-    height: 200px;
-    background-image: linear-gradient(to right, #155A96, #15945C);
-}
 *{
  	padding:0px;
  	margin:0px;
  	border:0px;
  }
+#grad1 {
+    height: 200px;
+    background-image: linear-gradient(to right, #155A96, #15945C);
+}
+
 .button {
 	width:100px;
 	height:50px;
@@ -24,13 +26,17 @@
 	top:100px;
 	outline: none;
 	border: none;
-	transition:border-radius 0.4s, background 0.4s;
+	transition:border-radius 0.4s, background 0.4s, width 0.4s, height 0.4s;
 }
 .button:hover {
+	width:100px;
+	height:50px;
 	border-radius: 15px;
 	background:rgb(222, 222, 222);	
 }
 .button:active {
+	width:100px;
+	height:50px;
 	border-radius: 29px;
 	background: rgb(190, 190, 190);
 }
@@ -57,6 +63,7 @@ p {
 	position:relative;
 	top:50px;
 	left:100px;
+	width:70%;
 	font-size:25px;
         color:#AAAADD
 }
@@ -79,23 +86,39 @@ a:hover{
 a:active{
 	color:#111111;
 }
+dropdown{
+	width:400px;
+}
+
 </style>
 </head>
 <body>
 <div id="grad1">
   <h1 style="text-align:center;">NAC博客</h1>
 </div>
-      <dropdown>
-      <input id="toggle1" type="checkbox">
-      <label for="toggle1" class="animate">菜单<i class="fa fa-bars float-right"></i></label>
-      <ul class="animate">
-        <li class="animate"><a href="https://space.bilibili.com/296484714">bilibili帐号</a><i class="fa fa-code float-right"></i></li>
-        <li class="animate"><a href="https://qm.qq.com/cgi-bin/qm/qr?k=ECQtujv6S8rFiZw9CGjL8vwuqOMe58aw&authKey=%2BfjiVc1hQIWcKgotK%2FSfsAdF%2Bsn5fLTebVerT0hDrI8gHDRpNikH55srfbxpkx5%2B">qq群</a><i class="fa fa-arrows-alt float-right"></i></li>
-        <li class="animate"><a href="https://ymdg-bm.github.io/ymz">鸡黍博客</a><i class="fa fa-cog float-right"></i></li>
-      </ul>
-    </dropdown>
-<p>正在开发中</p>
-<button class="button"><font color="#00000">可以按</font></button>
-<button class="buttondisabled">无效</button>
+<div>
+	<div style="width:300px;float:left;margin-right:10px">
+		<dropdown>
+			<input id="toggle1" type="checkbox">
+			<label for="toggle1" class="animate">菜单<i class="fa fa-bars float-right"></i></label>
+			<ul class="animate">
+				<li class="animate">
+					<a href="https://space.bilibili.com/296484714">bilibili帐号</a>
+					<i class="fa fa-code float-right"></i></li><li class="animate">
+						<a href="https://qm.qq.com/cgi-bin/qm/qr?k=ECQtujv6S8rFiZw9CGjL8vwuqOMe58aw&authKey=%2BfjiVc1hQIWcKgotK%2FSfsAdF%2Bsn5fLTebVerT0hDrI8gHDRpNikH55srfbxpkx5%2B">qq群</a>
+						<i class="fa fa-arrows-alt float-right"></i></li><li class="animate"><a href="https://ymdg-bm.github.io/ymz">鸡黍博客</a>
+							<i class="fa fa-cog float-right"></i></li><li class="animate"><a href="https://ymdg-bm.github.io/ymz/news">鸡黍博客 分页</a>
+								<i class="fa fa-cog float-right"></i>
+							</li>
+						</ul>
+					</dropdown>
+				</div>
+		<div style="width:700px;margin-right:10px;float:left;margin-left:30px;">
+			<p>正在开发中</p>
+			<button class="button"><font color="#00000">可以按</font></button>
+			<button class="buttondisabled">无效</button>
+		</div>
+</div>
+
 </body>
 </html>
