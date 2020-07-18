@@ -1,2 +1,2 @@
 # YMDG-BM.github.io
-This is an offical NAC's website.
+This is an official NAC's website.
