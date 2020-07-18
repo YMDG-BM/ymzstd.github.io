@@ -7,12 +7,12 @@
 }
 dropdown{
    display: inline-block;
-   margin: 20px 50px; 
-   width:200px;
+   margin: 20px 0; 
+   width:150px;
 }
 dropdown label, dropdown ul li{
   display: block;
-  width: 200px;
+  width: 150px;
   background: #ECF0F1;
   padding: 15px 20px;
 }
@@ -24,7 +24,7 @@ dropdown label:hover, dropdown ul li:hover{
 dropdown label{
   color: #1ABC9C;
   border-left: 4px solid #1ABC9C;
-  border-radius: 0 5px 0 0; 
+  border-radius: 5px 5px 0 0; 
   position: relative;
   z-index: 2;
 }
@@ -116,7 +116,7 @@ $colors: #E74C3C, #0072B5, #2C3E50;
   width:100px;
   height:50px;
   border-radius: 7px;
-  background-color:linear-gradient(90deg, rgb(21, 118, 122), rgb(21, 121, 119));
+  background:linear-gradient(90deg,  #15767A , #157977);
   position:relative;
   top:50px;
   outline: none;
@@ -127,13 +127,13 @@ $colors: #E74C3C, #0072B5, #2C3E50;
   width:100px;
   height:50px;
   border-radius: 15px;
-  background-color:linear-gradient(145deg, #3f8bb3, #4da7db);
+  background-color:rgb(222, 222, 222);
 }
 .abutton:active {
   width:100px;
   height:50px;
   border-radius: 29px;
-  background-color:linear-gradient(145deg, #2d6581, #3f8bb3);
+  background-color:rgb(200, 200, 200);
 }
 
 
@@ -182,6 +182,16 @@ p.text{
   word-wrap:break-word;
   text-indent:40px;  
     color:#606C71;
+}
+p.space{
+  position:relative;
+  left:50px;
+  top:5px;
+  width:70%;
+  font-size:10px;
+  word-wrap:break-word;
+  text-indent:40px;  
+  color:#606C71;
 }
 a{
   display:block;
