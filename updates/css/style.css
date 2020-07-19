@@ -1,0 +1,279 @@
+.float-right{
+  float: right;
+}
+.fa{
+ font-size: .8em;
+  line-height: 22px !important;
+}
+dropdown{
+   display: inline-block;
+   margin: 20px 0; 
+   width:150px;
+}
+dropdown label, dropdown ul li{
+  display: block;
+  width: 150px;
+  background: #ECF0F1;
+  padding: 15px 20px;
+}
+dropdown label:hover, dropdown ul li:hover{
+  background: #1ABC9C;
+  color: white;
+  cursor: pointer;
+}
+dropdown label{
+  color: #1ABC9C;
+  border-left: 4px solid #1ABC9C;
+  border-radius: 5px 5px 0 0; 
+  position: relative;
+  z-index: 2;
+}
+dropdown input{
+  display: none;
+}
+dropdown input ~ ul{
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  top: -20px;
+  z-index: 1;
+}
+dropdown input:checked + label{
+  background: #1ABC9C;
+  color: white;
+}
+
+dropdown input:checked ~ ul{
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+}
+$colors: #E74C3C, #0072B5, #2C3E50;
+
+@for $i from 1 through length($colors) {
+  dropdown ul li:nth-child(#{$i}) {
+    border-left: 4px solid nth($colors, $i);
+    .fa{
+      color: nth($colors, $i);
+    }
+    &:hover {
+        background: nth($colors, $i);
+        color: white;
+      .fa{
+        color: white; 
+      }
+    }
+  }
+}
+
+.animate{
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;  
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden; /* Chrome and Safari */
+  -moz-backface-visibility:hidden; /* Firefox */
+  -ms-backface-visibility:hidden; /* Internet Explorer */
+}
+*{
+  padding:0px;
+  margin:0px;
+  border:0px;
+ }
+#grad1 {
+    height: 200px;
+    background-image: linear-gradient(to right, #155A96, #15945C);
+}
+
+.button {
+  width:100px;
+  height:50px;
+  border-radius: 0px;
+  background: rgb(255, 255, 255);
+  position:relative;
+  left:50px;
+  top:100px;
+  outline: none;
+  border: none;
+  transition:border-radius 0.2s, background 0.2s;
+}
+.button:hover {
+  width:100px;
+  height:50px;
+  border-radius: 15px;
+  background:rgb(222, 222, 222);  
+}
+.button:active {
+  width:100px;
+  height:50px;
+  border-radius: 29px;
+  background: rgb(190, 190, 190);
+}
+
+.abutton  {
+  width:100px;
+  height:50px;
+  border-radius: 7px;
+  background-color:linear-gradient(90deg,  #15767A , #157977);
+  position:relative;
+  top:50px;
+  outline: none;
+  border: none;
+  transition:border-radius 0.2s, background-color 0.2s ;
+}
+.abutton:hover {
+  width:100px;
+  height:50px;
+  border-radius: 15px;
+  background-color:rgb(222, 222, 222);
+}
+.abutton:active {
+  width:100px;
+  height:50px;
+  border-radius: 29px;
+  background-color:rgb(200, 200, 200);
+}
+
+
+.buttondisabled{
+  width:100px;
+  height:50px;
+  border-radius: 10px;
+  background:rgb(200, 200, 200);
+  position:relative;
+  left:100px;
+  top:100px;
+  outline: none;
+  border: none;
+  opacity:0.7;
+}
+div.button{margin:0 auto;}
+
+h1 {
+  color:#ffffff;
+  position:relative;
+  top:30px;
+  font-size:60px;
+}
+p.bt {
+  position:relative;
+  top:15px;
+  left:50px;
+  width:70%;
+  font-size:35px;
+        color:rgba(0, 100, 48, 1)
+}
+p.subbt {
+  position:relative;
+  top:15px;
+  left:50px;
+  width:70%;
+  font-size:25px;
+        color:#AAAADD
+}
+p.text{
+  position:relative;
+  top:15px;
+  left:50px;
+  width:70%;
+  font-size:20px;
+  word-wrap:break-word;
+  text-indent:40px;  
+    color:#606C71;
+}
+p.space{
+  position:relative;
+  left:50px;
+  top:5px;
+  width:70%;
+  font-size:10px;
+  word-wrap:break-word;
+  text-indent:40px;  
+  color:#606C71;
+}
+a{
+  display:block;
+  height:40px;
+  width:175px;
+  line-height:40px; 
+  text-decoration:none;
+}
+a:link{
+  color:#111111;
+}
+a:visited{
+  color:#111111;
+}
+a:hover{
+  color:#111111;
+}
+a:active{
+  color:#111111;
+}
+a.btn{
+  display:block;
+  height:50px;
+  width:100px;
+  line-height:50px; 
+  text-decoration:none;
+}
+a.btn:link{
+  color:#111111;
+}
+a.btn:visited{
+  color:#111111;
+}
+a.btn:hover{
+  color:#111111;
+}
+a.btn:active{
+  color:#111111;
+}
+a.btnqqq{
+  display:block;
+  position:relative;
+  top:-40px;
+  height:50px;
+  width:100px;
+  line-height:50px; 
+  text-decoration:none;
+}
+a.btnqqq:link{
+  color:#111111;
+}
+a.btnqqq:visited{
+  color:#111111;
+}
+a.btnqqq:hover{
+  color:#111111;
+}
+a.btnqqq:active{
+  color:#111111;
+}
+a.github{
+  display:block;
+  position:relative;
+  height:50px;
+  width:100px;
+  line-height:50px; 
+  text-decoration:none;
+}
+a.github:link{
+  color:#111111;
+}
+a.github:visited{
+  color:#111111;
+}
+a.github:hover{
+  color:#111111;
+}
+a.github:active{
+  color:#111111;
+}
+iframe.bilibili{
+  position:relative;
+  top:40px;
+  left:60px;
+}
